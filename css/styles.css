@@ -1,6 +1,7 @@
 #title {
     background-color: #ff4c68;
-    padding: 0 8rem;
+    padding: 2rem 8rem;
+
 }
 
 .body {
@@ -18,8 +19,12 @@
 
 
 .phone {
-    width: 60%;
+    width: 17.5%;
     transform: rotate(25deg);
+    z-index: 0;
+    position: absolute;
+    bottom: 4rem;
+    margin-left: 10%;
 }
 
 .navbar-brand {
@@ -59,6 +64,9 @@
 #features {
     text-align: center;
     padding: 7% 12%;
+    background-color: white;
+    z-index: 1;
+    position: relative;
 }
 
 .features-box {
@@ -92,4 +100,53 @@
 
 .testimonial-carousel {
     padding: 7% 20%;
+}
+
+#pricing {
+    padding: 10%;
+}
+
+.pricing-heading {
+    font-size: 3rem;
+}
+
+@media (max-width: 1028px) {
+    .phone{
+        position: static;
+        transform: rotate(0deg);
+        width: 80%;
+        margin-left: 0;
+    }
+    #title {
+        text-align: center;
+    }
+}
+
+#cta {
+    background-color: #ff4c68;
+}
+
+.cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    padding: 2rem 23rem;
+}
+
+.cta-button {
+    margin: 2% 1.75% 8% 0;
+}
+
+#footer {
+    background-color: white;
+}
+
+.icons {
+    margin: 7% 1% 2% 1%;
+}
+
+.footer-p {
+    margin-bottom: 7%;
+    font-size: 1.25rem;
 }
